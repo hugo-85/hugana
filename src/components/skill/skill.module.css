@@ -1,0 +1,80 @@
+.skillCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  border-radius: 8px;
+  min-width: 400px;
+  /* max-width: 400px; */
+  /* padding: 20px;
+  border-inline-start: 4px solid;
+  border-block-start: 4px solid;
+  border-image-source: radial-gradient(
+    circle at top left,
+    #FFF,
+    transparent 20%
+  );
+  border-image-source: radial-gradient(
+    circle at top left,
+    #FFF,
+    transparent 20%
+  );
+  border-image-slice: 1; */
+  background-color: rgb(229 231 235 / 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.skillImageContainer {
+  border-radius: 8px 0px 0px 8px;
+  flex: 1;
+  min-width: 400px;
+  max-width: 800px;
+  height: 100%;
+}
+
+.skillImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 0px 0px 8px;
+  aspect-ratio: 16 / 9;
+}
+
+.skillDetails {
+  flex: 1;
+  align-self: flex-start;
+  min-width: 300px;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 10px;
+  padding: 20px;
+
+  .skillDescription {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .skillCard {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .skillImageContainer {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .skillImage {
+    border-radius: 8px 8px 0px 0px;
+    height: auto;
+  }
+  .skillDetails {
+    padding: 0px 02px 20px 20px;
+  }
+}
