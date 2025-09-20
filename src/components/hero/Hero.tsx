@@ -15,7 +15,7 @@ const Hero: FC<HeroProps> = () => {
       </div>
       <div className={styles.heroTitleContainer}>
         <h1 className={styles.heroTitle}>HUGANA</h1>
-        <h1>Empresa especializada en buceo profesional</h1>
+        <h2>Empresa especializada en buceo profesional</h2>
       </div>
     </section>
   );
