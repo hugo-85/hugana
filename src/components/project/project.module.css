@@ -1,4 +1,4 @@
-.skillCard {
+.projectCard {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,7 +28,7 @@
   backdrop-filter: blur(5px);
 }
 
-.skillImageContainer {
+.projectImageContainer {
   border-radius: 8px 0px 0px 8px;
   flex: 1;
   min-width: 400px;
@@ -36,14 +36,14 @@
   height: -webkit-fill-available;
 }
 
-.skillImage {
+.projectImage {
   width: 100%;
   height: 100%;
   border-radius: 8px 0px 0px 8px;
   aspect-ratio: 16 / 9;
 }
 
-.skillDetails {
+.projectDetails {
   flex: 1;
   align-self: flex-start;
   min-width: 300px;
@@ -56,11 +56,11 @@
   gap: 10px;
   padding: 20px;
 
-  .skillDescriptionContainer {
+  .projectDescriptionContainer {
     overflow-y: auto;
     max-height: 100%;
 
-    .skillDescription {
+    .projectDescription {
     margin: 0;
     font-size: 1.1rem;
     font-weight: 500;
@@ -71,21 +71,21 @@
 }
 
 @media screen and (max-width: 900px) {
-  .skillCard {
+  .projectCard {
     flex-direction: column;
     gap: 0px;
     max-height: none;
   }
-  .skillImageContainer {
+  .projectImageContainer {
     width: 100%;
     height: auto;
     border-radius: 8px 8px 0px 0px;
   }
-  .skillImage {
+  .projectImage {
     border-radius: 8px 8px 0px 0px;
     height: auto;
   }
-  .skillDetails {
+  .projectDetails {
     padding: 0px 20px 20px 20px;
   }
 }

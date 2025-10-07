@@ -14,11 +14,14 @@ const Skill: FC<SkillProps> = ({ skill }) => {
           className={styles.skillImage}
           src={skill.imageUrl}
           alt={skill.title}
+          loading="lazy"
         />
       </div>
       <figcaption className={styles.skillDetails}>
         <h2 className={styles.skillTitle}>{skill.title}</h2>
-        <p className={styles.skillDescription}>{skill.description}</p>
+        <div className={styles.skillDescriptionContainer}>
+          <p className={styles.skillDescription}>{skill.description}</p>
+        </div>
       </figcaption>
     </figure>
   );

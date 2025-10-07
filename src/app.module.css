@@ -1,0 +1,133 @@
+
+.mainBackgroundImagePlaceholder {
+  background: url("/imgs/main_background_small.webp") no-repeat center top;
+  background-size: cover;
+  content: " ";
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  max-width: 2560px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.mainBackgroundImage {
+  background: url("/imgs/main_background.webp") no-repeat center top;
+}
+
+.sectionTitleContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  border-bottom: 10px solid white;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #0a261f;
+  margin: 0;
+  padding: 0.2rem 1rem;
+  background: white;
+  width: fit-content;
+  letter-spacing: 0.8rem;
+  position: relative;
+  height: 3.4rem;
+  line-height: 3rem;
+}
+
+.sectionTitle::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 102%;
+  background: white;
+  left: -10px;
+  top: 0;
+  transform: skew(-10deg, 0deg);
+}
+
+.sectionTitle::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 102%;
+  background: white;
+  right: -10px;
+  top: 0;
+  transform: skew(10deg, 0deg);
+}
+
+/*
+
+.sectionTitle::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 1.7rem solid white;
+  border-bottom: 1.7rem solid white;
+  border-left: 20px solid transparent;
+}
+
+.sectionTitle::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 1.7rem solid white;
+  border-bottom: 1.7rem solid white;
+  border-right: 20px solid transparent;
+}
+
+*/
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  width: 100%;
+  /* max-width: 1400px; */
+  gap: 40px;
+  padding: 10px 40px 40px 40px;
+}
+
+@media (max-width: 768px) {
+
+  .sectionTitleContainer{
+    border-bottom: 5px solid white;
+  }
+  .sectionTitle {
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+    height: 2rem;
+    line-height: 2rem;
+  }
+
+  .sectionTitle::before {
+    left: -9.8px;
+    border-bottom: 2.2rem solid white;
+    border-left: 10px solid transparent;
+  }
+  .sectionTitle::after {
+    right: -9.8px;
+    border-bottom: 2.2rem solid white;
+    border-right: 10px solid transparent;
+  }
+}
+
+@media (max-width: 500px) {
+  .sectionContainer {
+    padding: 10px 20px 20px 20px;
+  }
+}

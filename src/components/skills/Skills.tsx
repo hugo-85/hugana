@@ -1,7 +1,7 @@
 import type { FC } from "react";
-import styles from "./skills.module.css";
 import type { skillType } from "../../types/skills";
 import Skill from "../skill/Skill";
+import appStyles from "../../app.module.css";
 
 const skillsList: skillType[] = [
   {
@@ -26,7 +26,10 @@ const skillsList: skillType[] = [
 
 const Skills: FC = () => {
   return (
-    <section className={styles.skillsContainer}>
+    <section className={appStyles.sectionContainer}>
+      <div className={appStyles.sectionTitleContainer}>
+        <h2 className={appStyles.sectionTitle}>Servicios</h2>
+      </div>
       {skillsList.map((skill, index) => (
         <Skill key={index} skill={skill} />
       ))}

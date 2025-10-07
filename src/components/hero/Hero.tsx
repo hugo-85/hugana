@@ -1,15 +1,13 @@
 import type { FC } from "react";
 import styles from "./hero.module.css";
 
-interface HeroProps {}
-
-const Hero: FC<HeroProps> = () => {
+const Hero: FC = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.heroLogoContainer}>
         <img
-          src="/imgs/main_logo.webp"
-          alt="main_logo"
+          src="/imgs/hugana_logo.webp"
+          alt="hugana_logo"
           className={styles.heroLogo}
         />
       </div>
