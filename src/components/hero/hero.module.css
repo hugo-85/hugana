@@ -64,7 +64,6 @@
     .hero {
         flex-direction: column;
         gap: 20px;
-        align-content: flex-start;
     } 
 
     .heroLogoContainer {

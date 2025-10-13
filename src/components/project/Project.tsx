@@ -19,7 +19,9 @@ const Project: FC<ProjectProps> = ({ project }) => {
       </div>
       <figcaption className={styles.projectDetails}>
         <h2 className={styles.projectTitle}>{project.title}</h2>
-        <p className={styles.projectDescription}>{project.description}</p>
+        <div className={styles.projectDescriptionContainer}>
+          <p className={styles.projectDescription}>{project.description}</p>
+        </div>
       </figcaption>
     </figure>
   );

@@ -54,23 +54,8 @@ main {
   max-width: 2560px;
   overflow: hidden;
   position: relative;
-  
-  padding-bottom: 20px;
+  z-index: 0;
 }
-
-/* main::before {
-  background: url("./assets/imgs/main_background_small.webp") no-repeat center top;
-  background-size: cover;
-  content: " ";
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-height: 100vh;
-  max-width: 2560px;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-} */
 
 a {
   font-weight: 500;

@@ -10,22 +10,9 @@
   /* height: 30svw; */
   min-height: 300px;
   max-height: 600px;
-  /* padding: 20px;
-  border-inline-start: 4px solid;
-  border-block-start: 4px solid;
-  border-image-source: radial-gradient(
-    circle at top left,
-    #FFF,
-    transparent 20%
-  );
-  border-image-source: radial-gradient(
-    circle at top left,
-    #FFF,
-    transparent 20%
-  );
-  border-image-slice: 1; */
   background-color: rgb(229 231 235 / 0.1);
   backdrop-filter: blur(5px);
+  aspect-ratio: 16 / 1;
 }
 
 .skillImageContainer {
@@ -40,7 +27,7 @@
   width: 100%;
   height: 100%;
   border-radius: 8px 0px 0px 8px;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 1;
 }
 
 .skillDetails {
@@ -61,11 +48,11 @@
     max-height: 100%;
 
     .skillDescription {
-    margin: 0;
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #fff;
-  }
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #fff;
+    }
   }
   
 }
@@ -75,6 +62,7 @@
     flex-direction: column;
     gap: 0px;
     max-height: none;
+    aspect-ratio: auto;
   }
   .skillImageContainer {
     width: 100%;
@@ -84,6 +72,7 @@
   .skillImage {
     border-radius: 8px 8px 0px 0px;
     height: auto;
+    aspect-ratio: 16 / 9;
   }
   .skillDetails {
     padding: 0px 20px 20px 20px;

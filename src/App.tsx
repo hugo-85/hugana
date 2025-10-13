@@ -3,6 +3,7 @@ import Hero from "./components/hero/Hero";
 import Skills from "./components/skills/Skills";
 import styles from "./app.module.css";
 import Projects from "./components/projects/Projects";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [backgroundLoaded, setBackgroundLoaded] = useState(false);
@@ -31,6 +32,11 @@ function App() {
         <Hero />
         <Skills />
         <Projects />
+        <Footer />
+        <img
+          src="imgs/background_footer.webp"
+          className={styles.footerBackground}
+        />
       </main>
     </>
   );
