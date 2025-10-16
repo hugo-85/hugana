@@ -36,6 +36,7 @@ function App() {
         <img
           src="imgs/background_footer.webp"
           className={styles.footerBackground}
+          loading="lazy"
         />
       </main>
     </>
